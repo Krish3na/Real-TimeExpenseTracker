@@ -15,12 +15,26 @@ The Real-Time Expense Tracker is a production-ready application that showcases m
 - **Scalable Architecture**: Microservices design with auto-scaling capabilities
 - **Automated Data Pipeline**: End-to-end ETL process from data ingestion to visualization
 
+## Project Demo
+
+Watch the complete demo of our Real-Time Expense Tracker on YouTube:
+
+[![Real-Time Expense Tracker Demo](Real-TimeExpenseTrackerPreview.png)](https://youtu.be/rrnqwVJVfyQ)
+
+Click the image or [here](https://youtu.be/rrnqwVJVfyQ) to watch the video.
+
+---
+
 ## Architecture
 
 ### Data Flow Architecture
 ```
 Data Generation (EC2) → Kinesis Data Streams → Lambda Processing → RDS/S3 Storage → Flask API → React Frontend
 ```
+
+Below is the detailed architecture diagram for the application:
+
+![Architecture Diagram](ExpenseTrackerArchitecture.jpg)
 
 ### Technology Stack
 

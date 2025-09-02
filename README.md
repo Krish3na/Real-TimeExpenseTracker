@@ -9,7 +9,8 @@ The Real-Time Expense Tracker is a production-ready application that showcases m
 ### Key Features
 
 - **Real-Time Data Processing**: Stream-based architecture using AWS Kinesis for live transaction processing
-- **Intelligent Expense Categorization**: ML-powered automatic categorization of expenses
+- **Automated Merchant Categorization**: Industry-standard MCC codes for instant transaction categorization
+- **Fraud Detection System**: Real-time risk assessment and scoring for transaction security
 - **Interactive Analytics Dashboard**: Real-time visualizations with React and Chart.js
 - **Secure Data Storage**: Multi-tier storage with S3 for receipts and RDS for structured data
 - **Scalable Architecture**: Microservices design with auto-scaling capabilities
@@ -76,18 +77,19 @@ Below is the detailed architecture diagram for the application:
 Raw Transactions → Data Validation → Transformation → Enrichment → Storage → Analytics
 ```
 
-## Machine Learning Integration
+## Intelligent Data Processing
 
-### Expense Categorization Model
-- **Feature Engineering**: Extracts transaction patterns and merchant information
-- **Classification Algorithm**: Multi-class classification for expense categories
-- **Model Training**: Automated retraining pipeline with new data
-- **A/B Testing**: Continuous model performance evaluation
+### Automated Merchant Categorization
+- **Industry Standard MCC Codes**: Uses real Merchant Category Codes for accurate categorization
+- **Automated Processing**: No manual intervention required for transaction categorization
+- **Standard Categories**: Grocery (5411), Clothing (5651), Gas (5541), Electronics (5732), Dining (5812)
+- **Real-time Classification**: Instant categorization as transactions stream in
 
-### Predictive Analytics
-- **Spending Pattern Analysis**: Identifies unusual spending patterns
-- **Budget Forecasting**: ML-based budget recommendations
-- **Anomaly Detection**: Flags suspicious transactions
+### Fraud Detection & Risk Assessment
+- **Risk Scoring System**: Automated risk assessment (1-100 scale)
+- **Risk Categorization**: LOW_RISK, MEDIUM_RISK, HIGH_RISK classification
+- **Real-time Monitoring**: Continuous fraud detection during transaction processing
+- **Multi-factor Analysis**: Considers location, amount, merchant, and transaction patterns
 
 ## Installation & Setup
 
@@ -185,10 +187,10 @@ CREATE TABLE expenses (
 
 ## Performance Metrics
 
-- **Throughput**: 1000+ transactions/second
-- **Latency**: < 100ms for real-time processing
-- **Availability**: 99.9% uptime
-- **Data Accuracy**: 99.5% categorization accuracy
+- **Data Processing Frequency**: Transactions processed every 2 seconds
+- **Real-time Processing**: Continuous data streaming with minimal latency
+- **Automated Categorization**: 5 standard MCC categories (Grocery, Clothing, Gas, Electronics, Dining)
+- **Fraud Detection**: Risk scoring (1-100) with automated risk categorization
 
 ## Monitoring & Observability
 
